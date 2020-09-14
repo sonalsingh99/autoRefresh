@@ -5,16 +5,9 @@ def mainProgram(refresh_interval,stopper):
         keyboard=Controller()
         for _ in range(0,stopper):
             time.sleep(refresh_interval)
-            keyboard.press(Key.cmd_l)
-            keyboard.press("d")
-            keyboard.release("d")
-            keyboard.release(Key.cmd_l)
             keyboard.press(Key.f5)
             keyboard.release(Key.f5)
-            keyboard.press(Key.cmd_l)
-            keyboard.press("d")
-            keyboard.release("d")
-            keyboard.release(Key.cmd_l)
+           
            
             
         return()
